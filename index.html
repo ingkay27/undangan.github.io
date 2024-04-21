@@ -278,13 +278,32 @@
 		<div class="container">	
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="col-md-3 col-sm-3 text-center"></div>
-					<div class="col-md-6 col-sm-6 text-center">
-						<div class="event-wrap animate-box">
+					<div class="col-md-1 col-sm-1 text-center"></div>
+					<div class="col-md-5 col-sm-5 text-center">
+							<div class="event-wrap animate-box">
 							<h3 style="font-family: 'Oswald', Arial, serif;">Akad Nikah</h3>
 							<div class="event-col">
 								<i class="icon-clock"></i>
-								<span>09:00</span>
+								<span>08:00</span>
+								<span>10:00</span>
+							</div>
+							<div class="event-col">
+								<i class="icon-calendar"></i>
+								<span>Minggu</span>
+								<span class="tanggal">05 Mei 2024</span>
+							</div>
+							<p style="font-family: 'Courgette', Arial, serif">Alamat : Jl. Buyut Nyata, Sindangwasa, Palasah, Majalengka</p>
+
+							<a href="https://maps.app.goo.gl/SNBCnXS9K5EoA5Rm7" target="_blank"
+							   class="btn btn-primary">Penunjuk Lokasi <i class="icon-map2"></i></a>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-5 text-center">
+						<div class="event-wrap animate-box">
+							<h3 style="font-family: 'Oswald', Arial, serif;">Resepsi Pernikahan</h3>
+							<div class="event-col">
+								<i class="icon-clock"></i>
+								<span>10:00</span>
 								<span>Selesai</span>
 							</div>
 							<div class="event-col">
@@ -298,7 +317,7 @@
 							   class="btn btn-primary">Penunjuk Lokasi <i class="icon-map2"></i></a>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-3 text-center"></div>
+					<div class="col-md-1 col-sm-1 text-center"></div>
 					<!-- <div class="col-md-6 col-sm-6 text-center">
 						<div class="event-wrap animate-box">
 							<h3 style="font-family: 'Oswald', Arial, serif;">Walimatul 'Ursy</h3>
@@ -335,7 +354,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Galeri Foto</h2>
-					<h3 style="color: #bf9b73">Khitbah Day - 07 November 2021</h3>
+					<h3 style="color: #bf9b73">Khitbah Day - 03 MARET 2024</h3>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md animate-box">
@@ -408,7 +427,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="fh5co-health-protocol">
+	<!-- <div id="fh5co-health-protocol"> -->
 <!--		<img src="images/background/blue-brush-1.jpg" alt="">-->
 		<!-- <div class="container">
 			<div class="row animate-box">
@@ -544,14 +563,14 @@
 						<div class="form-group">
 							<div class="input pesan"><label for="pesan">Message</label><textarea class="form-control" rows="4" id="pesan" name="pesan" placeholder="pesan"></textarea></div>
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<div class="input pesan"><label for="hadir">Kehadiran</label>
 								<select name="hadir" id="hadir" class="form-control">
 									<option value="hadir">Hadir</option>
 									<option value="tidak">Tidak Hadir</option>
 								</select>
 							</div>
-						</div>
+						</div> -->
 						<div class="form-group">
 						<div class="submit"><button type="submit" id="btn-wa" class="btn btn-primary btn-user btn-block">Send</button>
 						</div>
@@ -602,7 +621,15 @@
             </div>-->
 		</div>
 	</div>
-
+	<div id="fh5co-ayat">
+		<!--<img height="400" width="100%" style="top: 0" src="images/background/wave-up.svg">-->
+		<img height="400" width="100%" style="position: absolute; bottom: -175px" src="images/background/wave-down.svg">
+		<div class="container">
+			<div class="ayat-content animate-box">
+				<h1>Untuk Bagian no Rekening</h1>
+			</div>
+		</div>
+	</div>
 	<!--<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
@@ -947,12 +974,12 @@
 	var nama = 'Halo%20Nama%20saya%20' + document.getElementById('nama').value;
     var pesan = document.getElementById('pesan').value;
 	var baris = '%0A%0A';
-	if (document.getElementById('hadir').value = 'hadir'){
-		var kehadiran = 'Saya%20akan%20hadir%20di%20acara%20pernikahan%20kamu';
-	} else {
-		var kehadiran = 'Saya%20tidak%20bisa%20hadir%20di%20acara%20pernikahan%20kamu';
-	}
-	var message = nama + baris + pesan + baris + kehadiran;
+	// if (document.getElementById('hadir').value = 'hadir'){
+	// 	var kehadiran = 'Saya%20akan%20hadir%20di%20acara%20pernikahan%20kamu';
+	// } else {
+	// 	var kehadiran = 'Saya%20tidak%20bisa%20hadir%20di%20acara%20pernikahan%20kamu';
+	// }
+	var message = nama + baris + pesan + baris + 'Terimakasih';
     var win = window.open('https://api.whatsapp.com/send?phone='+nomor+'&text='+message);
     if (win) {
         //Browser has allowed it to be opened
